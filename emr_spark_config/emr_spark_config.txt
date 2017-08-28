@@ -1,0 +1,2 @@
+classification=spark,properties=[maximizeResourceAllocation=true]
+classification=spark-defaults,properties=[spark.driver.memory=4G,spark.executor.memory=4G]
