@@ -1,1 +1,15 @@
-[{"classification":"spark", "properties":{"maximizeResourceAllocation":"true"}}]
+[
+  {
+    "classification":"spark",
+    "properties":{
+      "maximizeResourceAllocation":"true"
+    }
+  },
+  {
+    "classification":"yarn-site",
+    "properties":{
+      "yarn.nodemanager.pmem-check-enabled":"false",
+      "yarn.nodemanager.vmem-check-enabled":"false"
+    }
+  }
+]
