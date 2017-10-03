@@ -1,2 +1,28 @@
+spark.sparkContext.getConf().getAll()
+
+[
+  {
+    "Classification": "spark-defaults",
+    "Properties": {
+      "spark.yarn.appMasterEnv.SPARK_HOME": "/usr/lib/spark"
+    }
+  },
+  {
+    "Classification": "spark",
+    "Properties": {
+      "maximizeResourceAllocation": "true"
+    }
+  },
+  {
+    "Classification": "yarn-site",
+    "Properties": {
+      "yarn.nodemanager.vmem-check-enabled": "false"
+    }
+  }
+]
+
+classification=spark-defaults,properties=[spark.yarn.appMasterEnv.SPARK_HOME, /usr/lib/spark]
 classification=spark,properties=[maximizeResourceAllocation=true]
+
+classification=spark-defaults,properties=[spark.driver.memory=7G,spark.executor.memory=7G,spark.executor.cores=5]
 classification=yarn-site,properties=[yarn.nodemanager.pmem-check-enabled=false,yarn.nodemanager.vmem-check-enabled=false]
